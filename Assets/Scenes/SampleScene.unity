@@ -408,13 +408,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.055952623, y: -0, z: -0, w: 0.9984334}
-  m_LocalPosition: {x: 4.3, y: 8.1, z: -23.6}
+  m_LocalRotation: {x: 0.10264496, y: 0, z: 0, w: 0.9947181}
+  m_LocalPosition: {x: 0, y: 5, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1045532856}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 6.415, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.783, y: 0, z: 0}
 --- !u!1 &1036344789
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045532854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500.2, y: 242.4, z: 301.3}
+  m_LocalPosition: {x: 506.2, y: 242.4, z: 301.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -616,7 +616,7 @@ PrefabInstance:
     - target: {fileID: 1492231143371302439, guid: 57a093abe39287241ab840a2e36617f5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1492231143371302439, guid: 57a093abe39287241ab840a2e36617f5,
         type: 3}
@@ -667,6 +667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210753438817769860, guid: 57a093abe39287241ab840a2e36617f5,
+        type: 3}
+      propertyPath: xRange
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a093abe39287241ab840a2e36617f5, type: 3}
