@@ -485,6 +485,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 16658293307934471, guid: afa6f7053fa27f34e831edbf7615b863,
+        type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1728247430640532477, guid: afa6f7053fa27f34e831edbf7615b863,
         type: 3}
       propertyPath: Lasers.Array.size
@@ -558,6 +563,11 @@ PrefabInstance:
     - target: {fileID: 7444715277806303948, guid: afa6f7053fa27f34e831edbf7615b863,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781925957195471465, guid: afa6f7053fa27f34e831edbf7615b863,
+        type: 3}
+      propertyPath: EmissionModule.enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
