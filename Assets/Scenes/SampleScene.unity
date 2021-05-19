@@ -607,6 +607,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 565012375049353455, guid: d2c744d78799a47488ef7b2f880fbb22,
+        type: 3}
+      propertyPath: NoiseModule.strength.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5852405740886309772, guid: d2c744d78799a47488ef7b2f880fbb22,
         type: 3}
       propertyPath: m_Name
