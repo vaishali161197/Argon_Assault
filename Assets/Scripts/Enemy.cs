@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] Transform spawnAtRunTime;
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log($"{name} I am hit by {other.gameObject.name}");
+        GameObject VFX = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        VFX.transform.parent = spawnAtRunTime;
+
         Destroy(gameObject);
     }
 }
