@@ -7,12 +7,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject hitVFX;
     [SerializeField] int hitPoint = 2;
-    [SerializeField] Transform spawnAtRunTime;
+    GameObject spawnAtRunTime;
     [SerializeField] int scorePerHit = 15;
     ScoreBoard scoreBoard;
     private void Start()
     {
         scoreBoard = FindObjectOfType<ScoreBoard>();
+        spawnAtRunTime = GameObject.FindWithTag("SpawnAtRunTime");
     }
     private void OnParticleCollision(GameObject other)
     {
@@ -29,12 +30,13 @@ public class Enemy : MonoBehaviour
     {
         hitPoint--;
         scoreBoard.IncreaseScore(scorePerHit);
-        
+        GameObject VFX= Instantiate(hitVFX, transform.position, Quaternion.identity);
+        VFX.transform.parent = spawnAtRunTime.transform;
     }
     private void killEnemy()
     {
         GameObject VFX = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        VFX.transform.parent = spawnAtRunTime;
+        VFX.transform.parent = spawnAtRunTime.transform;
         Destroy(gameObject);
     }
 }
